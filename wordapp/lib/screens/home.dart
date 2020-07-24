@@ -11,7 +11,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   TabController tabcontroller;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     tabcontroller = TabController(length: 2, vsync: this, initialIndex: 1);
   }
@@ -19,7 +18,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    EdgeInsets pad = MediaQuery.of(context).padding;
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: false,
